@@ -1,0 +1,14 @@
+.text {
+    color: white;
+}
+
+.dropzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    border: dashed 3px #ccc;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
