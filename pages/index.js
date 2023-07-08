@@ -35,7 +35,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>23rd Headquarters Special Troops - Arma Modlist parser</title>
-        <meta name="description" content="Nextjs drag and drop file upload" />
+        <meta name="description" content="Convert your .html arma modlist file to an Arma server commandline modlist string" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
