@@ -15,21 +15,19 @@ const CustomInput = ({allowedSpecialCharacters, onChange}) => {
   };
 
   return (
-    <div className={styles.outlinedInputContainer}>
+    <div className={styles.container}>
       <input
         type="text"
         value={text}
         onChange={handleInput}
-        className={styles.hiddenInput}
+        className={styles.input}
       />
-
-      <div className={styles.fakeInput}>
+      <div className={styles.charDisplay}>
         {text.split('').map((char, index) => (
           <span key={index} className={styles.outlinedChar}>
             {char}
           </span>
         ))}
-        <span className={`${styles.outlinedChar} ${styles.cursor}`}>|</span>
       </div>
     </div>
   );
