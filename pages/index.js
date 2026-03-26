@@ -9,7 +9,7 @@ export default function Home() {
 
   const [file, setFile] = useState(null);
   const [string, setString] = useState("");
-  const [allowedSpecialCharacters, setAllowedSpecialCharacters] = useState("_'[]()! -")
+  const [allowedSpecialCharacters, setAllowedSpecialCharacters] = useState("_'[]! -")
 
   useEffect(() => {
     if (file == null) return
