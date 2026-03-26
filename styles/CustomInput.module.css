@@ -1,0 +1,54 @@
+
+.outlinedInputContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.hiddenInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.fakeInput {
+  cursor: text;
+  display: flex;
+  flex-wrap: wrap;
+  border: dashed 3px #ccc;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: white;
+  min-height: 2rem;
+  outline: none;
+}
+
+.outlinedChar {
+  text-align: center;
+  display: inline-block;
+  margin: 0.1rem;
+  padding: 0.6rem;
+  background-color: #333;
+  border-radius: 0.2rem;
+}
+
+.cursor {
+  border: none;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
